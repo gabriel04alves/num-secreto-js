@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
 @import url('reset.css');
 @import url('header.css');
+@import url('app-main.css');
 @import url('footer.css');
 
 [data-context="day"] {
@@ -9,6 +10,7 @@
   --font-color-main: #464646;
   --font-color-second: #959595;
   --footer-bg-color: #FDFDFD;
+  --color-accent: #002F50;
 }
 
 [data-context="night"] {
@@ -16,6 +18,7 @@
   --font-color-main: #EDEDED;
   --font-color-second: #959595;
   --footer-bg-color: #272727;
+  --color-accent: #002F50;
 }
 
 * {

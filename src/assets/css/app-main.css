@@ -1,0 +1,51 @@
+.container-app-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 5rem 2rem;
+    
+    text-align: center;
+    font-size: 1rem;
+}
+
+.container-app-main h2 {
+    color: var(--font-color-main);
+}
+
+.container-app-main h3 {
+    color: var(--font-color-second);
+}
+
+.mensagem {
+    font-size: 1.4rem;
+    margin-top: 5vh;
+    color: var(--font-color-second);
+}
+
+.box {
+    display: inline-block;
+    border: 2px solid var(--color-accent);
+    
+    font-size: 6rem;
+    color: var(--font-color-main);
+
+    padding: 10px;
+    margin: 20px;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .container-app-main {
+        font-size: 1.6rem;
+        padding: 5rem 0;
+    }
+    .mensagem {
+        font-size: 1.5rem;
+        margin-top: 10rem;
+    }
+    .box {
+        font-size: 8rem;
+    }
+  }
