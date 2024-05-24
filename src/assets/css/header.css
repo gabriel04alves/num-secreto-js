@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.page-title-header {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--font-color-main);
+}
+
+.btn-change-theme {
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  .page-title-header {
+    font-size: 1.5rem;    
+  }
+
+  .btn-change-theme {
+    font-size: 2rem;
+  }
+}

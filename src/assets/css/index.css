@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+@import url('reset.css');
+@import url('header.css');
+@import url('footer.css');
+
+[data-context="day"] {
+  --bg-color-main: #EDEDED;
+  --font-color-main: #464646;
+  --font-color-second: #959595;
+  --footer-bg-color: #FDFDFD;
+}
+
+[data-context="night"] {
+  --bg-color-main: #202020;
+  --font-color-main: #EDEDED;
+  --font-color-second: #959595;
+  --footer-bg-color: #272727;
+}
+
+* {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: var(--bg-color-main);
+}
