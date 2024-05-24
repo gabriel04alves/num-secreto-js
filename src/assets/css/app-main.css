@@ -33,7 +33,18 @@
 
     padding: 10px;
     margin: 20px;
+}
 
+.btn-play-again {
+    padding: 1rem;
+    border: none;
+    background: var(--font-color-main);
+    color: var(--bg-color-main);
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 15px;
+    margin-top: 5vh;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {

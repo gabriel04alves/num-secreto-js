@@ -1,4 +1,5 @@
 elementAppMain = document.getElementById('app-main')
+btnPlayAgain = '<button id="play-again" class="btn-play-again">Jogar novamente</button>'
 
 function validateAttempt(shoot) {
     const number = +shoot
@@ -25,6 +26,7 @@ function validateAttempt(shoot) {
         elementAppMain.innerHTML = `
         <h2 class="">Você acertou!</h2>
         <h3 class="">O número secreto era ${secretNumber}</h3>
+        ${btnPlayAgain}
         `
     }
 }
@@ -36,3 +38,9 @@ function validateNumber(number) {
 function validateNumericRange(number) {
     return number > highestValue || number < lowerValue
 } 
+
+document.body.addEventListener('click', e => {
+    if (e.target.id == 'play-again') {
+        window.location.reload()
+    }
+})
