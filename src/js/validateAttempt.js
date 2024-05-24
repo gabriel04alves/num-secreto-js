@@ -4,6 +4,13 @@ btnPlayAgain = '<button id="play-again" class="btn-play-again">Jogar novamente</
 function validateAttempt(shoot) {
     const number = +shoot
 
+    if (gameOver(shoot)) {
+        elementAppMain.innerHTML = `
+        <h2 class="">Você encerrou a partida!</h2>
+        <h3 class="">O número secreto era ${secretNumber}</h3>
+        ${btnPlayAgain}
+        `
+    }
     if (validateNumber(number)) {
         elementShoot.innerHTML += `<div>Valor inválido: O valor não corresponde a um número. Tente novamente.</div>`
         return 
@@ -44,3 +51,9 @@ document.body.addEventListener('click', e => {
         window.location.reload()
     }
 })
+
+function gameOver(shoot) {
+    if (shoot === 'terminar' || 'encerrar' || 'game over' || 'desistir') {
+        return true
+    }
+}
