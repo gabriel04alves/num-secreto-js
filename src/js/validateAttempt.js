@@ -4,7 +4,7 @@ btnPlayAgain = '<button id="play-again" class="btn-play-again">Jogar novamente</
 function validateAttempt(shoot) {
     const number = +shoot
 
-    if (gameOver(shoot)) {
+    if (gameOver(number)) {
         elementAppMain.innerHTML = `
         <h2 class="">Você encerrou a partida!</h2>
         <h3 class="">O número secreto era ${secretNumber}</h3>
@@ -53,7 +53,6 @@ document.body.addEventListener('click', e => {
 })
 
 function gameOver(shoot) {
-    if (shoot === 'terminar' || 'encerrar' || 'game over' || 'desistir') {
-        return true
-    }
+    const gameOverKeywords = ['terminar', 'encerrar', 'game over', 'desistir'];
+    return gameOverKeywords.includes(shoot);
 }
