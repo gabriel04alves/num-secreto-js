@@ -18,7 +18,7 @@
     color: var(--font-color-second);
 }
 
-.mensagem {
+.message {
     font-size: 1.4rem;
     margin-top: 5vh;
     color: var(--font-color-second);
@@ -41,7 +41,7 @@
         font-size: 1.6rem;
         padding: 5rem 0;
     }
-    .mensagem {
+    .message {
         font-size: 1.5rem;
         margin-top: 10rem;
     }
