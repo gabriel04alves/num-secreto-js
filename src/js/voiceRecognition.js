@@ -8,7 +8,6 @@ recognition.lang = 'pt-Br'
 
 function onSpeak (e) {
     let shoot = e.results[0][0].transcript
-    displayTentative(shoot)
     validateAttempt(shoot)
 }
 
